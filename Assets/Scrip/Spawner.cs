@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
         timer2 += Time.deltaTime;
         if (Input.GetKey(KeyCode.L))
         {
-           if(timer1>=0.8f)
+           if(timer1>=0.4f)
             {
                 Instantiate(_mermi1, _spawn1.transform.position, _player1.transform.rotation);
                 timer1 = 0;
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            if (timer2 >= 0.8f)
+            if (timer2 >= 0.4f)
             {
                 Instantiate(_mermi2, _spawn2.transform.position, _player2.transform.rotation);
                 timer2 = 0;

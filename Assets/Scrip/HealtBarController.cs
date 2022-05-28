@@ -20,8 +20,6 @@ public class HealtBarController : MonoBehaviour
                 _player1Heal--;
                 _player1Text.text = _player1Heal.ToString();
             }
-            StartCoroutine(Destroyy());
-            Destroy(bullet.gameObject);
 
         }
         if (bullet.gameObject.CompareTag("bullet1"))
@@ -31,8 +29,7 @@ public class HealtBarController : MonoBehaviour
                 _player2Heal--;
                 _player2Text.text = _player2Heal.ToString();
             }
-            StartCoroutine(Destroyy());
-            Destroy(bullet.gameObject);
+
         }
 
         if(_player2Heal ==0)
@@ -51,8 +48,4 @@ public class HealtBarController : MonoBehaviour
         }
     }
 
-    IEnumerator Destroyy()
-    {
-        yield return new WaitForSeconds(0.3f);
-    }
 }

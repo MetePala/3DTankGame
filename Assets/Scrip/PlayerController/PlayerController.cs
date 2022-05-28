@@ -63,11 +63,11 @@ public class PlayerController : MonoBehaviour
     void Rotatee()
     {
        
-        _movecontroller.Rotate(_playerTransform,600);
+        _movecontroller.Rotate(_playerTransform,300);
     }
     void Rotatee2()
     {
 
-       _movecontroller.Rotate2(_playerTransform2, 600);
+       _movecontroller.Rotate2(_playerTransform2, 300);
     }
 }
